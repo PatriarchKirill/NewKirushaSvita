@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ilya Minin">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/test.css">
+    <title>Тест</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="header-left">
+                <p>Бетмен</p>
+            </div>
+            <div class="header-right">
+                <a href="index.html">Описание</a>
+                <a href="Slovar.html">Словрь</a>
+                <a href="test.html" class="active">Тест</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="profile.html" id="username">Личный кабинет</a>
+                <div class="logout-section" id="logout-section">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="top-pagename">Тест</h1>
+        <section class="central-content">
+            <h2>Тест по Бэтмену</h2>
+
+            <form id="quizForm" name="quizForm" novalidate>
+                <fieldset>
+                    <label for="q1">1. Как зовут главного героя?</label>
+                    <input type="text" id="q1" name="q1">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="q2">2. Как зовут главного злодея?</label>
+                    <input type="text" id="q2" name="q2">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. За что сражается бетмен</legend>
+                    <label><input type="radio" name="q3" value="Правду"> Правду</label>
+                    <label><input type="radio" name="q3" value="Ложь"> Ложь</label>
+                    <label><input type="radio" name="q3" value="Яблоко"> Яблоко</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Кого любит главный герой ?</legend>
+                    <label><input type="radio" name="q4" value="Маму"> Маму</label>
+                    <label><input type="radio" name="q4" value="Кирилла"> Кирилла </label>
+                    <label><input type="radio" name="q4" value="Ананас"> Ананас</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Сколько бэмену лет?</legend>
+                    <label><input type="radio" name="q5" value="33"> 33</label>
+                    <label><input type="radio" name="q5" value="41"> 41</label>
+                    <label><input type="radio" name="q5" value="71"> 71</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Он готов на?</legend>
+                    <label><input type="radio" name="q6" value="все"> все</label>
+                    <label><input type="radio" name="q6" value="Ничего"> Ничего</label>
+                    <label><input type="radio" name="q6" value="Поесть"> Поесть</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <div class="result-section">
+                    <span id="test-result"></span>
+                </div>
+
+                <button type="submit" id="submit-button">Ответить</button>
+            </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                               <p>&copy; 2024 Свита Кирюша Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="source/js/script.js"></script>
+    <script src="source/js/test.js"></script>
+</body>
+
+</html>
